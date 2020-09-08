@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <h1>Tip Calculator</h1>
+
+        <div id="calculator">
+            <form>
+                <label>
+                    How much was your bill? <br>
+                    <input type="text" id="billAmount"> €
+                </label>
+                <label>
+                    How was your service? <br>
+                    <select id="serviceQuality">
+                        <option disabled selected value="0"></option>
+
+                        <option id="op1" value="0.3">30% - Outstanding</option>
+                        <option id="op2" value="0.2">20% - Good</option>
+                        <option id="op3" value="0.1">10% - It was okay</option>
+                        <option id="op4" value="0.05">5%  - Bad</option>
+                        <option id="op5" value="0">0%  - Terrible</option>
+                    </select>
+                </label>
+                <label>
+                    How many people are sharing the bill? <br>
+                    <input type="text" id="totalPeople">
+                </label>
+                <button type="button" id="calculate">Calculate</button>
+            </form>
+        </div>
+
+        <div id="totalTip">
+            <span id="tip">0.00</span><sup>€</sup>
+            <small id="each">each</small>
+        </div>
+        <div id="totalBill">
+            <span id="bill">0.00</span><sup>€</sup>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="calculate_tip.js"></script>
+</body>
+</html>

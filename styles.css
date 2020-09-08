@@ -1,0 +1,166 @@
+
+body {
+    background: #3D2986;
+    color: #ffffff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#container {
+    width: 500px;
+    margin: 40px auto 40px;
+    padding: 20px 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 15px -5px #ffffff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    background-color: #4DBDCB;
+}
+
+h1 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: solid 2px #ffffff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+form label {
+    display: block;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+#select-label {
+    display: block;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #3a3a3a;
+}
+
+#op1 {
+    background-color: rgba(61, 41, 134, 0.05);
+}
+
+#op2 {
+    background-color: rgba(61, 41, 134, 0.1);
+}
+#op3 {
+    background-color: rgba(61, 41, 134, 0.2);
+}
+#op4 {
+    background-color: rgba(61, 41, 134, 0.3);
+}
+#op5 {
+    background-color: rgba(61, 41, 134, 0.4);
+}
+
+form input {
+    width: 100px;
+}
+
+button {
+    background: #C34B79;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    width: 200px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    outline: none;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: #c42d67;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+button:active {
+    transform: scale(1.08);
+    transition: 0.4s;
+}
+
+#totalTip, #totalBill {
+    display: none;
+    font-size: 50px;
+    margin-top: 40px;
+}
+#totalBill {
+    margin-top: 20px;
+}
+#each {
+    display: none;
+}
+
+#totalTip:before , #totalBill:before{
+    content: "Tip amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#totalBill:before {
+    content: "Total bill amount";
+}
+
+#totalTip sup, #totalBill sup {
+    font-size: 20px;
+    top: -18px;
+}
+
+#totalTip small {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+
+/*----------MOBILE----------*/
+
+@media screen and (max-width: 480px) {
+    #container {
+        width: 70%;
+        min-width: 300px;
+        margin: 40px auto 0;
+        padding: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 0 10px 15px -5px #ffffff;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        background-color: #4DBDCB;
+    }
+
+    form input {
+        width: 100px;
+    }
+
+    button {
+        padding: 10px;
+        width: 150px;
+    }
+
+    button:active {
+        transform: scale(1.1);
+    }
+}
